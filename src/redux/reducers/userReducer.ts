@@ -1,12 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit'
-import Axios from 'axios-observable';
-import { Env } from '../../../environment';
 export const userSlice = createSlice({
   name: 'users',
   initialState: {
     userList: [{
       id: '',
-      userName: '',
+      login: '',
     }]
   },
   reducers: {

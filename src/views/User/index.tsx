@@ -7,7 +7,6 @@ import {
 } from 'react-native';
 import { UserStyles } from './Styles/UserStyles';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
-import { IUser } from '../../interfaces/IUser';
 
 import { getUserList } from '../../redux/reducers/userReducer';
 import Axios from 'axios-observable';

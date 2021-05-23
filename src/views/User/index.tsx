@@ -17,7 +17,7 @@ export const User = (props: any) => {
 
   const isDarkMode = useColorScheme() === 'dark';
 
-  const users = useSelector((state) => state.users.userList);
+  const users = useSelector((state: any) => state.users.userList);
 
   const dispatch = useDispatch();
 

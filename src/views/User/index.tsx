@@ -3,12 +3,13 @@ import { useSelector, useDispatch } from 'react-redux';
 import {
   View,
   Text,
+  Button,
   useColorScheme
 } from 'react-native';
 import { UserStyles } from './Styles/UserStyles';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 
-import { getUserList } from '../../redux/reducers/userReducer';
+import { getUserList, removeLastUser } from '../../redux/reducers/userReducer';
 import Axios from 'axios-observable';
 import { Env } from '../../../environment';
 
@@ -58,6 +59,7 @@ export const User = (props: any) => {
           </View>
         ))
       }
+      <Button title="Remove Last User" onPress={() => dispatch(removeLastUser())}>Remove Last User</Button>
     </>
   );
 };

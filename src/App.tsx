@@ -1,9 +1,7 @@
 import React from 'react';
 import {
   SafeAreaView,
-  ScrollView,
   StatusBar,
-  View,
 } from 'react-native';
 import store from './redux/store/rootStore';
 import { Provider } from 'react-redux';
@@ -15,14 +13,7 @@ const App = () => {
     <Provider store={store}>
       <SafeAreaView>
         <StatusBar />
-        <ScrollView>
-          <View style={{
-            flex: 1,
-            flexDirection: 'column',
-          }}>
-            <User />
-          </View>
-        </ScrollView>
+        <User />
       </SafeAreaView>
     </Provider>
   );
